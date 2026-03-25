@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-ink: #120d0c;
+  --color-char: #1f1816;
+  --color-panel: #201715;
+  --color-orange: #f0762d;
+  --color-orange-soft: #ff9350;
+  --color-red: #d63a24;
+  --color-cream: #fff3df;
+  --color-gold: #f6c15b;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(240, 118, 45, 0.12), transparent 28%),
+    radial-gradient(circle at 20% 0%, rgba(246, 193, 91, 0.05), transparent 22%),
+    linear-gradient(180deg, #120d0c 0%, #171110 45%, #110d0c 100%);
+  color: var(--color-cream);
+}
+
+::selection {
+  background: rgba(240, 118, 45, 0.45);
+  color: var(--color-cream);
+}
+
+a,
+button {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+input,
+select,
+textarea {
+  min-height: 44px;
+}
+
+.smoke-divider {
+  position: relative;
+}
+
+.smoke-divider::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 243, 223, 0.2),
+    transparent
+  );
 }
