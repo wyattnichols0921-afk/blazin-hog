@@ -53,7 +53,7 @@ export function MenuCartShell({ categories }: MenuCartShellProps) {
       />
 
       <aside
-        className={`fixed bottom-20 right-4 z-40 w-[calc(100vw-2rem)] max-w-sm overflow-hidden rounded-[2rem] border border-[color:rgba(255,243,223,0.12)] bg-[linear-gradient(180deg,rgba(20,15,14,0.97),rgba(10,8,8,0.97))] shadow-[0_28px_60px_rgba(0,0,0,0.38)] transition-all duration-300 md:bottom-24 md:right-6 ${
+        className={`fixed bottom-18 right-3 z-40 w-[calc(100vw-1.5rem)] max-w-[19rem] overflow-hidden rounded-[1.6rem] border border-[color:rgba(255,243,223,0.12)] bg-[linear-gradient(180deg,rgba(20,15,14,0.97),rgba(10,8,8,0.97))] shadow-[0_24px_48px_rgba(0,0,0,0.34)] transition-all duration-300 sm:bottom-20 sm:right-4 sm:w-[calc(100vw-2rem)] sm:max-w-sm sm:rounded-[2rem] sm:shadow-[0_28px_60px_rgba(0,0,0,0.38)] md:bottom-24 md:right-6 ${
           isOpen
             ? "pointer-events-auto translate-y-0 opacity-100"
             : "pointer-events-none translate-y-4 opacity-0"
