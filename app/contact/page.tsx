@@ -11,33 +11,33 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-16">
-      <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
-        <div className="space-y-5">
+    <section className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-12 md:px-8 md:py-16">
+      <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
+        <div className="space-y-4">
           <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
             Contact
           </p>
-          <h1 className="text-3xl font-black uppercase leading-tight text-[var(--color-cream)] sm:text-4xl md:text-5xl">
+          <h1 className="text-2xl font-black uppercase leading-tight text-[var(--color-cream)] sm:text-4xl md:text-5xl">
             Booking, catering, and truck updates.
           </h1>
-          <p className="text-sm leading-8 text-[color:rgba(248,239,224,0.74)] sm:text-base">
+          <p className="text-[13px] leading-6 text-[color:rgba(248,239,224,0.74)] sm:text-base sm:leading-8">
             Reach out for office lunches, private events, market appearances, or
             larger catering requests. The fastest way to lock in a date is by
             email with your headcount, event type, and preferred service window.
           </p>
         </div>
 
-        <div className="grid gap-5">
+        <div className="grid gap-4">
           <BookingInquiryForm />
 
-          <section className="rounded-[1.75rem] border border-white/10 bg-[color:rgba(248,239,224,0.05)] p-5 shadow-xl shadow-black/20 sm:p-6 md:p-8">
-            <h2 className="text-xl font-black uppercase text-[var(--color-cream)] sm:text-2xl">
+          <section className="rounded-[1.45rem] border border-white/10 bg-[color:rgba(248,239,224,0.05)] p-4 shadow-xl shadow-black/20 sm:rounded-[1.75rem] sm:p-6 md:p-8">
+            <h2 className="text-lg font-black uppercase text-[var(--color-cream)] sm:text-2xl">
               Direct Contact
             </h2>
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               <a
                 href={`tel:${siteDetails.phone.replace(/[^\d]/g, "")}`}
-                className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5 transition-all duration-200 hover:border-[var(--color-orange)]"
+                className="rounded-[1.25rem] border border-white/10 bg-white/4 p-4 transition-all duration-200 hover:border-[var(--color-orange)] sm:rounded-[1.5rem] sm:p-5"
               >
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-orange)]">
                   Phone
@@ -48,7 +48,7 @@ export default function ContactPage() {
               </a>
               <a
                 href={`mailto:${siteDetails.email}`}
-                className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5 transition-all duration-200 hover:border-[var(--color-orange)]"
+                className="rounded-[1.25rem] border border-white/10 bg-white/4 p-4 transition-all duration-200 hover:border-[var(--color-orange)] sm:rounded-[1.5rem] sm:p-5"
               >
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-orange)]">
                   Email
@@ -60,8 +60,8 @@ export default function ContactPage() {
             </div>
           </section>
 
-          <section className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(248,239,224,0.05),rgba(248,239,224,0.03))] p-5 shadow-xl shadow-black/20 sm:p-6 md:p-8">
-            <h2 className="text-xl font-black uppercase text-[var(--color-cream)] sm:text-2xl">
+          <section className="rounded-[1.45rem] border border-white/10 bg-[linear-gradient(180deg,rgba(248,239,224,0.05),rgba(248,239,224,0.03))] p-4 shadow-xl shadow-black/20 sm:rounded-[1.75rem] sm:p-6 md:p-8">
+            <h2 className="text-lg font-black uppercase text-[var(--color-cream)] sm:text-2xl">
               Booking & Catering
             </h2>
             <p className="mt-4 text-sm leading-7 text-[color:rgba(248,239,224,0.72)]">
@@ -70,7 +70,7 @@ export default function ContactPage() {
               service, drop catering, late-night event feeds, and custom pickup
               packages depending on availability.
             </p>
-            <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-[color:rgba(185,45,29,0.12)] p-5">
+            <div className="mt-4 rounded-[1.25rem] border border-white/10 bg-[color:rgba(185,45,29,0.12)] p-4 sm:mt-6 sm:rounded-[1.5rem] sm:p-5">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-orange)]">
                 Best Inquiry Format
               </p>
@@ -81,8 +81,8 @@ export default function ContactPage() {
             </div>
           </section>
 
-          <section className="rounded-[1.75rem] border border-white/10 bg-[color:rgba(248,239,224,0.05)] p-5 shadow-xl shadow-black/20 sm:p-6 md:p-8">
-            <h2 className="text-xl font-black uppercase text-[var(--color-cream)] sm:text-2xl">
+          <section className="rounded-[1.45rem] border border-white/10 bg-[color:rgba(248,239,224,0.05)] p-4 shadow-xl shadow-black/20 sm:rounded-[1.75rem] sm:p-6 md:p-8">
+            <h2 className="text-lg font-black uppercase text-[var(--color-cream)] sm:text-2xl">
               Follow The Truck
             </h2>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">

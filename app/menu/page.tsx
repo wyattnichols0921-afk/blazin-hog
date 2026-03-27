@@ -13,15 +13,15 @@ export const metadata: Metadata = {
 export default function MenuPage() {
   return (
     <>
-      <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-16">
-        <div className="max-w-3xl space-y-5">
+      <section className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-12 md:px-8 md:py-16">
+        <div className="max-w-3xl space-y-4">
           <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
             Menu
           </p>
-          <h1 className="text-3xl font-black uppercase leading-tight text-[var(--color-cream)] sm:text-4xl md:text-5xl">
+          <h1 className="text-2xl font-black uppercase leading-tight text-[var(--color-cream)] sm:text-4xl md:text-5xl">
             Smoked meats, stacked sandwiches, and sides worth protecting.
           </h1>
-          <p className="text-sm leading-8 text-[color:rgba(248,239,224,0.74)] sm:text-base">
+          <p className="text-[13px] leading-6 text-[color:rgba(248,239,224,0.74)] sm:text-base sm:leading-8">
             The menu is designed to stay tight, fast, and consistent. Every
             item is built for service on the move without losing the smoke,
             crunch, or texture that makes barbecue worth the wait.

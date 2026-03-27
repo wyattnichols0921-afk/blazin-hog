@@ -13,22 +13,22 @@ export const metadata: Metadata = {
 export default function LocationsPage() {
   return (
     <>
-      <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-16">
-        <div className="max-w-3xl space-y-5">
+      <section className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-12 md:px-8 md:py-16">
+        <div className="max-w-3xl space-y-4">
           <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
             Locations
           </p>
-          <h1 className="text-3xl font-black uppercase leading-tight text-[var(--color-cream)] sm:text-4xl md:text-5xl">
+          <h1 className="text-2xl font-black uppercase leading-tight text-[var(--color-cream)] sm:text-4xl md:text-5xl">
             Weekly stops, built for regulars and first-timers alike.
           </h1>
-          <p className="text-sm leading-8 text-[color:rgba(248,239,224,0.74)] sm:text-base">
+          <p className="text-[13px] leading-6 text-[color:rgba(248,239,224,0.74)] sm:text-base sm:leading-8">
             The truck rotates through lunch-heavy office parks, evening brewery
             crowds, and weekend community events. Hours can shift for private
             bookings, so reach out if you need a confirmed stop.
           </p>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 md:mt-12 md:grid-cols-2">
+        <div className="mt-6 grid grid-cols-1 gap-3 md:mt-12 md:grid-cols-2">
           {weeklyLocations.map((stop) => (
             <LocationCard key={`${stop.day}-${stop.venue}`} stop={stop} />
           ))}
