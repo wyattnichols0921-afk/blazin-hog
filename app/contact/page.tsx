@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 md:px-8 md:py-16">
+    <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-16">
       <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
         <div className="space-y-5">
           <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
@@ -34,7 +34,7 @@ export default function ContactPage() {
             <h2 className="text-xl font-black uppercase text-[var(--color-cream)] sm:text-2xl">
               Direct Contact
             </h2>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
               <a
                 href={`tel:${siteDetails.phone.replace(/[^\d]/g, "")}`}
                 className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5 transition-all duration-200 hover:border-[var(--color-orange)]"
@@ -42,7 +42,7 @@ export default function ContactPage() {
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-orange)]">
                   Phone
                 </p>
-                <p className="mt-3 text-lg font-bold text-[var(--color-cream)]">
+                <p className="mt-3 break-words text-base font-bold text-[var(--color-cream)] sm:text-lg">
                   {siteDetails.phone}
                 </p>
               </a>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-orange)]">
                   Email
                 </p>
-                <p className="mt-3 text-lg font-bold text-[var(--color-cream)]">
+                <p className="mt-3 break-words text-base font-bold text-[var(--color-cream)] sm:text-lg">
                   {siteDetails.email}
                 </p>
               </a>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                 href={siteDetails.facebook}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-[var(--color-orange)] px-5 py-3 text-sm font-bold uppercase tracking-[0.18em] text-[var(--color-cream)] shadow-lg shadow-[color:rgba(212,98,45,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--color-orange-soft)] sm:w-auto"
+                className="inline-flex min-h-[40px] w-full items-center justify-center rounded-full bg-[var(--color-orange)] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--color-cream)] shadow-lg shadow-[color:rgba(212,98,45,0.24)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--color-orange-soft)] sm:w-auto"
               >
                 Facebook
               </a>

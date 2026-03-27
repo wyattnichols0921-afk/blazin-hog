@@ -33,9 +33,9 @@ export type LocationStop = {
 export const navItems: NavItem[] = [
   { href: "/", label: "Home" },
   { href: "/menu", label: "Menu" },
+  { href: "/contact", label: "Contact" },
   { href: "/about", label: "About" },
   { href: "/locations", label: "Locations" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export const featuredItems: FeaturedItem[] = [
@@ -208,4 +208,5 @@ export const siteDetails = {
   instagram: "https://instagram.com/blazinhogbbq",
   facebook: "https://facebook.com/blazinhogbbq",
   address: "Serving Charleston, Mount Pleasant, and the surrounding Lowcountry",
+  squareCheckoutUrl: "",
 };

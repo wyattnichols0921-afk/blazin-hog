@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { CTASection } from "@/components/cta-section";
-import { MenuCategory } from "@/components/menu-category";
+import { MenuCartShell } from "@/components/menu-cart-shell";
 import { menuCategories } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function MenuPage() {
   return (
     <>
-      <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 md:px-8 md:py-16">
+      <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-16">
         <div className="max-w-3xl space-y-5">
           <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
             Menu
@@ -28,11 +28,7 @@ export default function MenuPage() {
           </p>
         </div>
 
-        <div className="mt-8 space-y-6 md:mt-12 md:space-y-8">
-          {menuCategories.map((category) => (
-            <MenuCategory key={category.title} category={category} />
-          ))}
-        </div>
+        <MenuCartShell categories={menuCategories} />
       </section>
 
       <CTASection

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 md:px-8 md:py-16">
+      <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-16">
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
           <div className="space-y-4">
             <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
@@ -40,7 +40,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 md:mt-12 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 md:mt-12 md:grid-cols-2 xl:grid-cols-3">
           {[
             {
               title: "Real Smoke",
@@ -72,11 +72,11 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <section className="mt-8 rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(248,239,224,0.06),rgba(248,239,224,0.03))] p-6 shadow-2xl shadow-black/15 sm:mt-12 sm:p-8 md:p-10">
+        <section className="mt-8 rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(248,239,224,0.06),rgba(248,239,224,0.03))] p-5 shadow-2xl shadow-black/15 sm:mt-12 sm:p-8 md:p-10">
           <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
             What Makes Blazin Hog Different
           </p>
-          <div className="mt-5 grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
             <div>
               <h3 className="text-lg font-black uppercase text-[var(--color-cream)]">
                 Fire-Finished Flavor

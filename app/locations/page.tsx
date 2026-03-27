@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function LocationsPage() {
   return (
     <>
-      <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 md:px-8 md:py-16">
+      <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-16">
         <div className="max-w-3xl space-y-5">
           <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
             Locations
@@ -28,7 +28,7 @@ export default function LocationsPage() {
           </p>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 md:mt-12 lg:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-4 md:mt-12 md:grid-cols-2">
           {weeklyLocations.map((stop) => (
             <LocationCard key={`${stop.day}-${stop.venue}`} stop={stop} />
           ))}
