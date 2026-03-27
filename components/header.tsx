@@ -39,16 +39,6 @@ export function Header() {
         </Link>
 
         <div className="flex items-center gap-2 lg:hidden">
-          <Link
-            href="/cart"
-            className="inline-flex min-h-[42px] items-center gap-2 rounded-full border border-white/12 bg-white/5 px-3.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--color-cream)] transition-all duration-200 hover:border-[var(--color-orange)] hover:text-[var(--color-orange)]"
-          >
-            <span>Cart</span>
-            <span className="rounded-full bg-[color:rgba(240,118,45,0.16)] px-2 py-0.5 text-[10px] font-bold text-[var(--color-gold)]">
-              {itemCount}
-            </span>
-          </Link>
-
           <button
             type="button"
             className="inline-flex min-h-[42px] min-w-[42px] items-center justify-center gap-2.5 rounded-full border border-white/12 bg-white/5 px-3.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--color-cream)] transition-all duration-200 hover:border-[var(--color-orange)] hover:text-[var(--color-orange)]"
