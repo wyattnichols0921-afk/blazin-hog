@@ -8,25 +8,25 @@ export function BookingInquiryForm() {
   const [eventType, setEventType] = useState("");
 
   const fieldClassName =
-    "w-full rounded-[1.1rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,243,223,0.08),rgba(255,243,223,0.04))] px-4 py-3 text-sm text-[var(--color-cream)] outline-none placeholder:text-[color:rgba(248,239,224,0.38)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-all duration-200 focus:border-[var(--color-orange)] focus:bg-[linear-gradient(180deg,rgba(255,243,223,0.1),rgba(255,243,223,0.05))] focus:shadow-[0_0_0_4px_rgba(240,118,45,0.12)]";
+    "w-full rounded-[1rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,243,223,0.08),rgba(255,243,223,0.04))] px-3.5 py-2.5 text-[13px] text-[var(--color-cream)] outline-none placeholder:text-[color:rgba(248,239,224,0.38)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-all duration-200 focus:border-[var(--color-orange)] focus:bg-[linear-gradient(180deg,rgba(255,243,223,0.1),rgba(255,243,223,0.05))] focus:shadow-[0_0_0_4px_rgba(240,118,45,0.12)] sm:rounded-[1.1rem] sm:px-4 sm:py-3 sm:text-sm";
 
   return (
-    <section className="rounded-[1.9rem] border border-white/10 bg-[linear-gradient(180deg,rgba(248,239,224,0.06),rgba(248,239,224,0.03))] p-5 shadow-[0_28px_70px_rgba(0,0,0,0.28)] sm:p-6 md:p-8">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(248,239,224,0.06),rgba(248,239,224,0.03))] p-4 shadow-[0_28px_70px_rgba(0,0,0,0.28)] sm:rounded-[1.9rem] sm:p-6 md:p-8">
       <div className="max-w-2xl space-y-4">
         <p className="inline-flex rounded-full border border-[color:rgba(240,118,45,0.24)] bg-[color:rgba(240,118,45,0.1)] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.24em] text-[var(--color-orange)]">
           Booking Inquiry
         </p>
-        <h2 className="text-xl font-black uppercase text-[var(--color-cream)] sm:text-2xl">
+        <h2 className="text-lg font-black uppercase text-[var(--color-cream)] sm:text-2xl">
           Tell the team about your event.
         </h2>
-        <p className="max-w-xl text-sm leading-7 text-[color:rgba(248,239,224,0.72)]">
+        <p className="max-w-xl text-[13px] leading-6 text-[color:rgba(248,239,224,0.72)] sm:text-sm sm:leading-7">
           This intake form helps collect the details needed for catering,
           private service, and special truck bookings. Submit by email or phone
           after gathering the basics below.
         </p>
       </div>
 
-      <form className="mt-6 grid gap-4 sm:mt-8 sm:grid-cols-2">
+      <form className="mt-5 grid gap-3.5 sm:mt-8 sm:grid-cols-2 sm:gap-4">
         <label className="block">
           <span className="mb-2 block text-xs font-bold uppercase tracking-[0.18em] text-[color:rgba(248,239,224,0.72)]">
             Full Name
@@ -162,7 +162,7 @@ export function BookingInquiryForm() {
           />
         </label>
 
-        <div className="sm:col-span-2 rounded-[1.6rem] border border-[color:rgba(255,255,255,0.1)] bg-[linear-gradient(135deg,rgba(185,45,29,0.12),rgba(240,118,45,0.07))] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:p-6">
+        <div className="sm:col-span-2 rounded-[1.35rem] border border-[color:rgba(255,255,255,0.1)] bg-[linear-gradient(135deg,rgba(185,45,29,0.12),rgba(240,118,45,0.07))] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:rounded-[1.6rem] sm:p-6">
           <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
             <div className="space-y-3">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-orange)]">

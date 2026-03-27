@@ -48,7 +48,7 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col overflow-x-clip">
             <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(212,98,45,0.1),transparent_30%),linear-gradient(180deg,#120d0c_0%,#171110_45%,#110d0c_100%)]" />
             <Header />
-            <main className="flex-1 pt-[78px] sm:pt-[84px]">{children}</main>
+            <main className="flex-1 pt-[68px] sm:pt-[84px]">{children}</main>
             <Footer />
           </div>
         </CartProvider>

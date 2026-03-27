@@ -22,17 +22,17 @@ export function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[color:rgba(255,243,223,0.08)] bg-[color:rgba(11,9,8,0.72)] backdrop-blur-2xl">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 md:px-8">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 sm:py-3 md:px-8">
         <Link
           href="/"
           className="group shrink-0"
           aria-label="Blazin Hog home"
         >
-          <div className="rounded-[1.35rem] border border-[color:rgba(255,243,223,0.14)] bg-[linear-gradient(180deg,rgba(255,243,223,0.08),rgba(255,243,223,0.03))] px-4 py-2.5 shadow-[0_12px_32px_rgba(0,0,0,0.24)] transition-all duration-200 group-hover:border-[color:rgba(255,147,80,0.32)]">
+          <div className="rounded-[1.15rem] border border-[color:rgba(255,243,223,0.14)] bg-[linear-gradient(180deg,rgba(255,243,223,0.08),rgba(255,243,223,0.03))] px-3.5 py-2 shadow-[0_12px_32px_rgba(0,0,0,0.24)] transition-all duration-200 group-hover:border-[color:rgba(255,147,80,0.32)] sm:rounded-[1.35rem] sm:px-4 sm:py-2.5">
             <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-[var(--color-gold)]">
               Pit Fired
             </p>
-            <p className="mt-1 text-lg font-black uppercase tracking-[0.18em] text-[var(--color-cream)] sm:text-xl sm:tracking-[0.22em]">
+            <p className="mt-1 text-base font-black uppercase tracking-[0.18em] text-[var(--color-cream)] sm:text-xl sm:tracking-[0.22em]">
               Blazin Hog
             </p>
           </div>
@@ -41,7 +41,7 @@ export function Header() {
         <div className="flex items-center gap-2 lg:hidden">
           <button
             type="button"
-            className="inline-flex min-h-[42px] min-w-[42px] items-center justify-center gap-2.5 rounded-full border border-white/12 bg-white/5 px-3.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--color-cream)] transition-all duration-200 hover:border-[var(--color-orange)] hover:text-[var(--color-orange)]"
+            className="inline-flex min-h-[38px] min-w-[38px] items-center justify-center gap-2 rounded-full border border-white/12 bg-white/5 px-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--color-cream)] transition-all duration-200 hover:border-[var(--color-orange)] hover:text-[var(--color-orange)] sm:min-h-[42px] sm:min-w-[42px] sm:gap-2.5 sm:px-3.5"
             aria-expanded={isOpen}
             aria-controls="site-nav"
             aria-label="Toggle navigation"
@@ -112,7 +112,7 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex min-h-[42px] items-center rounded-[1rem] px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.14em] transition-all duration-200 ${
+                  className={`flex min-h-[38px] items-center rounded-[0.95rem] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] transition-all duration-200 sm:min-h-[42px] sm:rounded-[1rem] sm:px-3.5 sm:py-2 sm:text-[11px] ${
                     active
                       ? "bg-[linear-gradient(180deg,var(--color-orange-soft),var(--color-orange))] text-[var(--color-cream)] shadow-[0_10px_24px_rgba(240,118,45,0.28)]"
                       : "text-[color:rgba(255,243,223,0.82)] hover:bg-[color:rgba(255,243,223,0.08)] hover:text-[var(--color-cream)]"
@@ -125,7 +125,7 @@ export function Header() {
             })}
             <Link
               href="/cart"
-              className="inline-flex min-h-[38px] w-full items-center justify-center rounded-full border border-[color:rgba(255,243,223,0.16)] bg-[linear-gradient(180deg,rgba(255,243,223,0.1),rgba(255,243,223,0.04))] px-3.5 py-1.5 text-[11px] font-black uppercase tracking-[0.14em] text-[var(--color-cream)] transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--color-gold)] hover:bg-[linear-gradient(180deg,rgba(255,243,223,0.16),rgba(255,243,223,0.07))]"
+              className="inline-flex min-h-[36px] w-full items-center justify-center rounded-full border border-[color:rgba(255,243,223,0.16)] bg-[linear-gradient(180deg,rgba(255,243,223,0.1),rgba(255,243,223,0.04))] px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.14em] text-[var(--color-cream)] transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--color-gold)] hover:bg-[linear-gradient(180deg,rgba(255,243,223,0.16),rgba(255,243,223,0.07))] sm:min-h-[38px] sm:px-3.5 sm:text-[11px]"
               onClick={() => setIsOpen(false)}
             >
               Cart ({itemCount})
