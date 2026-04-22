@@ -40,131 +40,217 @@ export const navItems: NavItem[] = [
 
 export const featuredItems: FeaturedItem[] = [
   {
-    name: "Brisket Plate",
+    name: "Philly & Wings",
     description:
-      "Pepper-crusted brisket with Texas toast, house pickles, and two scratch-made sides.",
-    price: "$19",
-    tag: "Best Seller",
+      "One of the most-ordered plates on the flyer, built for a full meal with big flavor.",
+    price: "$15.99",
+    tag: "Most Ordered",
   },
   {
-    name: "Pulled Pork Sandwich",
+    name: "1/2 Slab Rib Dinner",
     description:
-      "Slow-smoked pork shoulder, tangy slaw, and ember sauce on a toasted brioche bun.",
-    price: "$14",
-    tag: "Truck Favorite",
+      "A barbecue dinner plate served with two sides and a generous half slab of ribs.",
+    price: "$18.99",
+    tag: "BBQ Dinner",
   },
   {
-    name: "Smoked Ribs",
+    name: "Chicken Philly Combo",
     description:
-      "St. Louis ribs lacquered with fire glaze and finished over open flame for extra bark.",
-    price: "$22",
-    tag: "Pit Master Pick",
+      "Chicken Philly served as a combo and listed with fries on the current menu.",
+    price: "$12.99",
+    tag: "Combo",
   },
   {
-    name: "Loaded Mac Bowl",
+    name: "Full Slab",
     description:
-      "Creamy smoked gouda mac stacked with chopped brisket, crispy onions, and hot honey.",
-    price: "$16",
-    tag: "Crowd Pleaser",
+      "A full slab of ribs from the festival menu for the serious rib crowd.",
+    price: "$29.99",
+    tag: "Ribs",
   },
 ];
 
 export const menuCategories: MenuCategoryData[] = [
   {
-    title: "BBQ Plates",
+    title: "Most Ordered",
     description:
-      "Built for big appetites with smoked meats, toast, pickles, and your choice of two sides.",
+      "The flyer calls these out as the most ordered picks for the event.",
     items: [
       {
-        name: "Brisket Plate",
-        description: "Sliced prime brisket with black pepper bark and ember jus.",
-        price: "$19",
+        name: "Rib Dinner",
+        description: "A customer favorite from the most-ordered section of the menu.",
+        price: "$18.99",
       },
       {
-        name: "Smoked Ribs",
-        description: "Half rack of ribs with fire glaze and charred lemon.",
-        price: "$22",
-      },
-      {
-        name: "Two Meat Plate",
-        description: "Choose any two meats with toast, pickles, and two sides.",
-        price: "$24",
+        name: "Philly & Wings",
+        description: "A popular combo plate featured on the festival flyer.",
+        price: "$15.99",
       },
     ],
   },
   {
-    title: "Sandwiches",
+    title: "Combos",
     description:
-      "Stacked high, sauce optional, and built to eat curbside without losing the crunch.",
+      "Combo meals served with fries, just like the printed menu says.",
     items: [
       {
-        name: "Pulled Pork Sandwich",
-        description: "Smoked pork, tangy slaw, and cider vinegar mop.",
-        price: "$14",
+        name: "Titletown",
+        description: "Combo basket served with fries.",
+        price: "$9.99",
       },
       {
-        name: "Brisket Melt",
-        description: "Chopped brisket, smoked cheddar, caramelized onions, and mustard aioli.",
-        price: "$15",
+        name: "Chicken Tenders",
+        description: "Chicken tenders combo served with fries.",
+        price: "$9.99",
       },
       {
-        name: "Hot Link Stack",
-        description: "Snapped beef hot links with peppers, onions, and deep red sauce.",
-        price: "$13",
+        name: "Slamburger",
+        description: "Single slamburger combo served with fries.",
+        price: "$9.99",
+      },
+      {
+        name: "Double Slamburger",
+        description: "Double slamburger combo served with fries.",
+        price: "$11.99",
+      },
+      {
+        name: "Chicken Philly",
+        description: "Chicken Philly combo served with fries.",
+        price: "$12.99",
+      },
+      {
+        name: "Philly Cheesesteak Combo",
+        description: "Classic Philly cheesesteak combo served with fries.",
+        price: "$13.99",
+      },
+    ],
+  },
+  {
+    title: "Favorites",
+    description:
+      "House favorites highlighted on the flyer for quick ordering.",
+    items: [
+      {
+        name: "Philly & Wings",
+        description: "A favorite pairing and one of the highlighted best sellers.",
+        price: "$15.99",
+      },
+      {
+        name: "Philly & Slamburger",
+        description: "A loaded favorite for guests wanting two heavy hitters together.",
+        price: "$14.99",
+      },
+      {
+        name: "Blazin Nasty Fries",
+        description: "Specialty fries featured in the favorites section.",
+        price: "$10.99",
+      },
+    ],
+  },
+  {
+    title: "BBQ Dinners",
+    description:
+      "Dinner plates listed with two sides on the festival menu.",
+    items: [
+      {
+        name: "1/2 Slab Rib Dinner",
+        description: "Half slab rib dinner served with two sides.",
+        price: "$18.99",
+      },
+      {
+        name: "1/2 Chicken Dinner",
+        description: "Half chicken dinner served with two sides.",
+        price: "$13.99",
+      },
+      {
+        name: "Smoked Sausage Dinner",
+        description: "Smoked sausage dinner served with two sides.",
+        price: "$10.99",
+      },
+      {
+        name: "Pulled Pork Dinner",
+        description: "Pulled pork dinner served with two sides.",
+        price: "$10.99",
+      },
+      {
+        name: "Nasty Pork Dinner",
+        description: "Nasty pork dinner served with two sides.",
+        price: "$11.99",
+      },
+      {
+        name: "Pork Chop Dinner",
+        description: "Pork chop dinner served with two sides.",
+        price: "$12.99",
+      },
+    ],
+  },
+  {
+    title: "Ribs",
+    description:
+      "Straight rib orders from the flyer for customers who want ribs by the slab.",
+    items: [
+      {
+        name: "Full Slab",
+        description: "Full slab of ribs.",
+        price: "$29.99",
+      },
+      {
+        name: "Half Slab",
+        description: "Half slab of ribs.",
+        price: "$14.99",
       },
     ],
   },
   {
     title: "Sides",
     description:
-      "House-made classics that hold their own next to the smoke and heat.",
+      "Side choices shown on the current flyer. Prices were not listed on the image.",
     items: [
       {
-        name: "Loaded Mac Bowl",
-        description: "Smoked gouda mac, brisket bits, crispy onions, and hot honey drizzle.",
-        price: "$16",
+        name: "Mac & Cheese",
+        description: "Available side choice.",
+        price: "See store",
+      },
+      {
+        name: "Collard Greens",
+        description: "Available side choice.",
+        price: "See store",
       },
       {
         name: "Baked Beans",
-        description: "Molasses beans with burnt ends and a touch of chipotle.",
-        price: "$5",
+        description: "Available side choice.",
+        price: "See store",
       },
       {
         name: "Coleslaw",
-        description: "Crisp cabbage slaw with buttermilk dressing and cracked pepper.",
-        price: "$4",
+        description: "Available side choice.",
+        price: "See store",
       },
       {
-        name: "Skillet Cornbread",
-        description: "Warm honey butter cornbread with a browned edge.",
-        price: "$5",
+        name: "Potato Salad",
+        description: "Available side choice.",
+        price: "See store",
+      },
+      {
+        name: "Fried Okra",
+        description: "Available side choice.",
+        price: "See store",
+      },
+      {
+        name: "Fries",
+        description: "Available side choice.",
+        price: "See store",
       },
     ],
   },
   {
-    title: "Drinks",
+    title: "Festival Special",
     description:
-      "Cold staples for long lunch lines, late-night events, and smoky summer weekends.",
+      "Seasonal festival special featured on the printed menu.",
     items: [
       {
-        name: "Sweet Tea",
-        description: "Brewed fresh daily and served ice-cold.",
-        price: "$3",
-      },
-      {
-        name: "Lemonade",
-        description: "Fresh lemon, cane sugar, and a clean tart finish.",
-        price: "$3",
-      },
-      {
-        name: "Arnold Palmer",
-        description: "Half tea, half lemonade, full porch energy.",
-        price: "$3",
-      },
-      {
-        name: "Bottled Water",
-        description: "Cold and ready for the road.",
-        price: "$2",
+        name: "Blueberry Lemonade",
+        description: "Festival special drink featured on the flyer.",
+        price: "Ask for price",
       },
     ],
   },

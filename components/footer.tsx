@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { FacebookIcon } from "@/components/social-icons";
 import { navItems, siteDetails } from "@/data/site";
 
 export function Footer() {
@@ -59,9 +60,10 @@ export function Footer() {
                 href={siteDetails.facebook}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-[44px] items-center rounded-full px-2 transition-all duration-200 hover:bg-[color:rgba(255,243,223,0.06)] hover:text-[var(--color-orange)]"
+                aria-label="Facebook"
+                className="inline-flex min-h-[44px] w-fit items-center justify-center rounded-full px-2 transition-all duration-200 hover:bg-[color:rgba(24,119,242,0.12)]"
               >
-                Facebook
+                <FacebookIcon className="h-5 w-5" />
               </a>
             </div>
           </div>

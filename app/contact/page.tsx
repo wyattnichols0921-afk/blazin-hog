@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { BookingInquiryForm } from "@/components/booking-inquiry-form";
+import { FacebookIcon } from "@/components/social-icons";
 import { siteDetails } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -90,9 +91,10 @@ export default function ContactPage() {
                 href={siteDetails.facebook}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-[40px] w-full items-center justify-center rounded-full bg-[var(--color-orange)] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--color-cream)] shadow-lg shadow-[color:rgba(212,98,45,0.24)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--color-orange-soft)] sm:w-auto"
+                aria-label="Facebook"
+                className="inline-flex min-h-[40px] w-full items-center justify-center rounded-full bg-[#1877F2] px-4 py-2 text-white shadow-lg shadow-[color:rgba(24,119,242,0.32)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#166FE5] sm:w-auto"
               >
-                Facebook
+                <FacebookIcon className="h-5 w-5" />
               </a>
             </div>
           </section>

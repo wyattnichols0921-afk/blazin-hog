@@ -10,6 +10,7 @@ type MenuItemCardProps = {
 
 export function MenuItemCard({ item, categoryTitle }: MenuItemCardProps) {
   const { addItem } = useCart();
+  const canAddToCart = /\d/.test(item.price);
 
   return (
     <article className="rounded-[1.35rem] border border-[color:rgba(255,243,223,0.1)] bg-[linear-gradient(180deg,rgba(255,243,223,0.08),rgba(255,243,223,0.03))] p-3.5 shadow-lg shadow-black/15 transition-all duration-200 hover:-translate-y-0.5 hover:border-[color:rgba(240,118,45,0.45)] hover:shadow-[0_18px_34px_rgba(0,0,0,0.18)] sm:rounded-[1.6rem] sm:p-5">
@@ -30,16 +31,25 @@ export function MenuItemCard({ item, categoryTitle }: MenuItemCardProps) {
         </p>
         <button
           type="button"
-          className="inline-flex min-h-[36px] items-center justify-center rounded-full border border-[color:rgba(255,147,80,0.45)] bg-[linear-gradient(180deg,var(--color-orange-soft),var(--color-orange))] px-3.5 py-1.5 text-[11px] font-black uppercase tracking-[0.14em] text-[var(--color-cream)] shadow-[0_8px_18px_rgba(240,118,45,0.2)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110"
-          onClick={() =>
+          className={`inline-flex min-h-[36px] items-center justify-center rounded-full px-3.5 py-1.5 text-[11px] font-black uppercase tracking-[0.14em] transition-all duration-200 ${
+            canAddToCart
+              ? "border border-[color:rgba(255,147,80,0.45)] bg-[linear-gradient(180deg,var(--color-orange-soft),var(--color-orange))] text-[var(--color-cream)] shadow-[0_8px_18px_rgba(240,118,45,0.2)] hover:-translate-y-0.5 hover:brightness-110"
+              : "cursor-not-allowed border border-white/10 bg-white/5 text-[color:rgba(255,243,223,0.55)]"
+          }`}
+          disabled={!canAddToCart}
+          onClick={() => {
+            if (!canAddToCart) {
+              return;
+            }
+
             addItem({
               id: `${categoryTitle}-${item.name}`.toLowerCase().replace(/\s+/g, "-"),
               name: item.name,
               price: item.price,
-            })
-          }
+            });
+          }}
         >
-          Add
+          {canAddToCart ? "Add" : "Ask In Store"}
         </button>
       </div>
     </article>

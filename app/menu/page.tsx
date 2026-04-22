@@ -7,7 +7,7 @@ import { menuCategories } from "@/data/site";
 export const metadata: Metadata = {
   title: "Menu",
   description:
-    "Explore BBQ plates, sandwiches, sides, and drinks from the Blazin Hog food truck menu.",
+    "Explore the current Blazin Hog BBQ menu with festival specials, combos, dinners, ribs, sides, and prices.",
 };
 
 export default function MenuPage() {
@@ -19,12 +19,12 @@ export default function MenuPage() {
             Menu
           </p>
           <h1 className="text-2xl font-black uppercase leading-tight text-[var(--color-cream)] sm:text-4xl md:text-5xl">
-            Smoked meats, stacked sandwiches, and sides worth protecting.
+            Current menu, combos, dinners, and festival specials.
           </h1>
           <p className="text-[13px] leading-6 text-[color:rgba(248,239,224,0.74)] sm:text-base sm:leading-8">
-            The menu is designed to stay tight, fast, and consistent. Every
-            item is built for service on the move without losing the smoke,
-            crunch, or texture that makes barbecue worth the wait.
+            This page now follows your printed flyer so customers can see the
+            current menu sections, listed prices, and the blueberry festival
+            special in one place.
           </p>
         </div>
 

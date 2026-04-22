@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CTASection } from "@/components/cta-section";
 import { FeaturedItems } from "@/components/featured-items";
 import { HeroSection } from "@/components/hero-section";
@@ -12,7 +13,7 @@ export default function HomePage() {
       <FeaturedItems />
 
       <section className="smoke-divider mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-12 md:px-8 md:py-16">
-        <div className="grid gap-4 rounded-[1.8rem] border border-[color:rgba(255,243,223,0.1)] bg-[linear-gradient(180deg,rgba(255,243,223,0.06),rgba(255,243,223,0.02))] p-4 shadow-[0_20px_40px_rgba(0,0,0,0.18)] sm:gap-6 sm:rounded-[2.2rem] sm:p-5 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10 lg:p-8">
+        <div className="grid gap-4 rounded-[1.8rem] border border-[color:rgba(255,243,223,0.1)] bg-[linear-gradient(180deg,rgba(255,243,223,0.06),rgba(255,243,223,0.02))] p-4 shadow-[0_20px_40px_rgba(0,0,0,0.18)] sm:gap-6 sm:rounded-[2.2rem] sm:p-5 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10 lg:p-8">
           <div className="space-y-4">
             <p className="text-xs font-bold uppercase tracking-[0.26em] text-[var(--color-orange)]">
               About The Truck
@@ -20,6 +21,16 @@ export default function HomePage() {
             <h2 className="text-xl font-black uppercase leading-tight text-[var(--color-cream)] sm:text-3xl md:text-4xl">
               Built around patient smoke and fast service.
             </h2>
+            <div className="overflow-hidden rounded-[1.5rem] border border-[color:rgba(255,243,223,0.12)] bg-[color:rgba(11,9,8,0.2)] shadow-[0_18px_35px_rgba(0,0,0,0.22)]">
+              <Image
+                src="/the-truck.jpg"
+                alt="The Blazin Hog barbecue truck parked and ready for service."
+                width={2048}
+                height={1536}
+                className="h-full w-full object-cover"
+                sizes="(min-width: 1024px) 42vw, 100vw"
+              />
+            </div>
             <div className="rounded-[1.5rem] border border-[color:rgba(255,243,223,0.1)] bg-[linear-gradient(180deg,rgba(240,118,45,0.12),rgba(214,58,36,0.06))] p-4">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[var(--color-gold)]">
                 Brand Promise
